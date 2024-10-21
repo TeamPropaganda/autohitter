@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Propaganda Auto Checkouter",
+  "version": "1.0",
+  "description": "Automates Stripe checkout retries, logs card decline reasons, identifies successful transactions, and modifies outgoing requests.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "debugger",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.stripe.com/*",
+    "*://62.169.27.88/*",
+    "*://*/cs_live_*",
+    "*://buy.stripe.com/*",
+    "https://api.telegram.org/*"
+  ],
+  "background": {
+    "service_worker": "scripts/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://checkout.stripe.com/*",
+        "https://buy.stripe.com/*",
+        "https://*/cs_live_*"
+      ],
+      "js": ["scripts/content.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "type": "module"
+    }
+  ],
+  "action": {
+    "default_title": "Propaganda Auto Checkouter"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["images/detected.png", "scripts/retry.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

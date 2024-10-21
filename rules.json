@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "action": {
+        "type": "modifyHeaders",
+        "responseHeaders": [
+          {
+            "header": "Content-Type",
+            "operation": "set",
+            "value": "application/json"
+          }
+        ]
+      },
+      "condition": {
+        "urlFilter": "https://api.stripe.com/*",
+        "resourceTypes": ["xmlhttprequest"]
+      }
+    }
+  ]
+  
