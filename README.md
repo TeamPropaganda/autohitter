@@ -43,7 +43,7 @@ For a quick walkthrough, check out the [Tutorial Video on Kapwing](https://www.k
    - If this message appears, try reloading the extension by disabling and re-enabling it from the extensions page. You may need to repeat this 3-4 times.
   
 - **Telegram Verification**:
-   - Ensure you entered your Telegram ID correctly. (Do not enter the bot token.)
+   - Ensure you entered your Telegram ID correctly.
    - Use the [@HadesIsHereOnly_bot](https://t.me/HadesIsHereOnly_bot) to generate and verify your OTP.
 
 ---
