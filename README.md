@@ -31,9 +31,11 @@ Propaganda Auto Checkouter is a Chrome extension that automates the checkout pro
 
 ---
 
-## **Tutorial Video**
+## **Warning**
 
-For a quick walkthrough, check out the [Tutorial Video on Kapwing](https://www.kapwing.com/videos/671e2391ab32e8273a64f9b6).
+> ⚠️ **Warning**  
+> For Educational Purposes Only.  
+> **We are not responsible for any damages done using our product!**
 
 ---
 
