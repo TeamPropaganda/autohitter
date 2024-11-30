@@ -1,59 +1,117 @@
+# 🛡️ Propaganda Auto Checkouter - Educational Extension
 
-# **Propaganda Auto Checkouter v1.1**
+> **⚠️ DISCLAIMER: This project is for EDUCATIONAL PURPOSES ONLY. The authors are not responsible for any misuse or damage caused by this program. Use at your own risk and responsibility.**
 
-Propaganda Auto Checkouter is a Chrome extension that automates the checkout process on Stripe, logs card decline reasons, identifies successful transactions, and modifies outgoing requests. With real-time notifications via Telegram and retry management, this tool simplifies and speeds up the checkout process.
+## 🌟 Overview
+
+Propaganda Auto Checkouter is a browser extension developed for educational purposes to demonstrate automated form handling, payment system interactions, and browser extension development best practices. It showcases various technical concepts including:
+
+- Browser Extension Architecture (Manifest V3)
+- Real-time form manipulation
+- Network request handling
+- Telegram integration for notifications
+- Advanced selector handling (XPath & CSS)
+
+## ✨ Features
+
+- 🔄 Automated retry mechanism for form submissions
+- 📝 Comprehensive logging system
+- 🎯 Support for both BIN and CC modes
+- 📱 Telegram integration for real-time notifications
+- 🔍 Detailed transaction history tracking
+- ⚡ Improved error handling and debugging
+- 🛠️ Customizable selectors (XPath/CSS)
+
+## 🚀 Recent Improvements
+
+- Enhanced logging system with detailed error messages
+- Fixed single-digit card number input handling
+- Improved MM/YY format validation
+- Better CVV handling (including 000 format)
+- Smoother retry mechanism
+- Enhanced error reporting
+- Improved success rate tracking
+
+## 💻 Installation
+
+1. Clone this repository:
+```bash
+git clone https://github.com/yourusername/propaganda-auto-checkouter.git
+```
+
+2. Open Chrome/Edge browser and navigate to:
+   - Chrome: `chrome://extensions/`
+   - Edge: `edge://extensions/`
+
+3. Enable "Developer mode" in the top right corner
+
+4. Click "Load unpacked" and select the cloned repository folder
+
+## 🔧 Configuration
+
+### BIN Mode
+1. Open extension settings
+2. Select "BIN" tab
+3. Enter your BIN number (e.g., 424242)
+4. Set your preferred submit button selector
+5. Click Save
+
+### CC Mode
+1. Open extension settings
+2. Select "CC" tab
+3. Enter card list (one per line)
+   Format: `CARDNUMBER|MM|YYYY|CVV`
+4. Set submit button selector
+5. Click Save
+
+### Telegram Notifications
+1. Select "Telegram" tab
+2. Enter your Telegram ID
+3. Request and verify OTP
+4. Join our Telegram group for updates
+
+## 🎯 Usage Tips
+
+- Use precise selectors for better reliability
+- Monitor the console for detailed logs
+- Check transaction history regularly
+- Keep the extension updated
+- Join our Telegram group for support
+
+## 🐛 Known Issues & Solutions
+
+1. **Selector Not Found**: Ensure correct selector syntax
+2. **Form Not Detected**: Refresh page and try again
+3. **Network Issues**: Check internet connection
+4. **Notification Delays**: Verify Telegram settings
+
+## 🔒 Security Features
+
+- Secure data storage
+- Encrypted communication
+- Safe credential handling
+- Privacy-focused logging
+
+## ⚖️ Legal Notice
+
+This software is provided for educational purposes only. Users are responsible for ensuring their use complies with all applicable laws and regulations. The authors do not endorse or encourage any unauthorized or malicious use of this software.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+## 📫 Support
+
+Join our [Telegram Group](https://t.me/TeamPropaganda) for:
+- Updates and announcements
+- Community support
+- Feature requests
+- Bug reports
+
+## 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/propaganda-auto-checkouter&type=Date)](https://star-history.com/#yourusername/propaganda-auto-checkouter&Date)
 
 ---
 
-## **Features**
-
-- **Automated Checkout Process**: Automatically submits card details and manages retries as needed.
-- **Real-Time Notifications**: Sends success or decline notifications to your Telegram account.
-- **Multi-Tab Support**: Handles multiple tabs with unique card details for each.
-- **Flexible Settings**: Customize BIN, card list, retry intervals, and notifications.
-
----
-
-## **Getting Started**
-
-1. **Download the Files**: Get the `.zip`, `.crx`, or source code from this repository.
-2. **Open Chrome Extensions Page**: Go to `chrome://extensions/` in your Chrome browser.
-3. **Enable Developer Mode**: Toggle the "Developer mode" switch on (top right).
-4. **Load the Extension**:
-   - Click on **Load unpacked**.
-   - Select the `propaganda v1.1` folder from the downloaded files.
-5. **Open Extension Settings**:
-   - Click on the extension icon to open the settings.
-   - Enter your details, including BIN, card list, and Telegram ID.
-6. **Verify Telegram ID**:
-   - Send and verify your OTP by starting this bot: [@HadesIsHereOnly_bot](https://t.me/HadesIsHereOnly_bot).
-7. **Start Using**: Navigate to a Stripe checkout page or a supported site, and the extension will handle the rest based on your settings.
-
----
-
-## **Warning**
-
-> ⚠️ **Warning**  
-> For Educational Purposes Only.  
-> **We are not responsible for any damages done using our product!**
-
----
-
-## **Common Issues and Solutions**
-
-- **"Card list ended" Notification**:
-   - If this message appears, try reloading the extension by disabling and re-enabling it from the extensions page. You may need to repeat this 3-4 times.
-  
-- **Telegram Verification**:
-   - Ensure you entered your Telegram ID correctly.
-   - Use the [@HadesIsHereOnly_bot](https://t.me/HadesIsHereOnly_bot) to generate and verify your OTP.
-
----
-
-## **Acknowledgments**
-
-Special thanks to **Techno**, **Hades**, and **CSub** for their dedication and contributions to making this Auto Checkouter extension possible. 
-
----
-
-Best of luck, and happy checking out!
+<p align="center">Made with ❤️ for educational purposes</p> 
